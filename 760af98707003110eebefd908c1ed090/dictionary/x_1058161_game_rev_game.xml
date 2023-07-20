@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="11ebb54b07003110eebefd908c1ed066" label="GAME" max_length="40" name="x_1058161_game_rev_game" type="collection">
+        <element label="Developer" max_length="40" name="developer" reference="sys_user" type="reference"/>
+        <element choice="1" label="ESRB Rating" max_length="40" name="esrb_rating" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Genre" max_length="40" name="genre" type="choice">
+            <choice/>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Game Id" max_length="10" name="number" type="string"/>
+        <element label="Released" max_length="40" name="released" type="boolean"/>
+        <element label="Release Date" max_length="40" name="release_date" type="glide_date"/>
+        <element display="true" label="Title" max_length="40" name="title" type="string"/>
+    </element>
+</database>

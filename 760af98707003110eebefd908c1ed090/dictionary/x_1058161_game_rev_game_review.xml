@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="72bd71cb07003110eebefd908c1ed073" label="GAME REVIEW" max_length="40" name="x_1058161_game_rev_game_review" type="collection">
+        <element label="Comment" max_length="100" name="comment" type="string"/>
+        <element label="Game" max_length="32" name="game" reference="x_1058161_game_rev_game" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="GameReview Id" max_length="40" name="number" type="string"/>
+        <element label="Reviewer" max_length="32" name="reviewer" reference="sys_user" type="reference"/>
+        <element label="Review Date" max_length="40" name="review_date" type="glide_date"/>
+        <element choice="1" label="Stars" max_length="40" name="stars" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="game"/>
+        </index>
+        <index name="index2">
+            <element name="reviewer"/>
+        </index>
+    </element>
+</database>

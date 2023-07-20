@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_1058161_game_rev_sys_id</description>
+        <name>x_1058161_game_rev_sys_id</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 01:36:46</sys_created_on>
+        <sys_id>2164c28307403110eebefd908c1ed03d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1058161_game_rev_sys_id</sys_name>
+        <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
+        <sys_update_name>sys_security_acl_2164c28307403110eebefd908c1ed03d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 01:36:46</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Game Review">760af98707003110eebefd908c1ed090</application>
+        <file_path/>
+        <instance_id>81a9d2a0dbc6d3c0536ad5b0cf9619e0</instance_id>
+        <instance_name>dev58858</instance_name>
+        <name>sys_security_acl_2164c28307403110eebefd908c1ed03d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_1058161_game_rev_sys_id</description><name>x_1058161_game_rev_sys_id</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-20 01:36:46</sys_created_on><sys_id>2164c28307403110eebefd908c1ed03d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1058161_game_rev_sys_id</sys_name><sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package><sys_policy/><sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope><sys_update_name>sys_security_acl_2164c28307403110eebefd908c1ed03d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-20 01:36:46</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-732679104</payload_hash>
+        <record_name>x_1058161_game_rev_sys_id</record_name>
+        <reverted_from/>
+        <source>869bf14307003110eebefd908c1ed0ea</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 01:36:46</sys_created_on>
+        <sys_id>a564c28307403110eebefd908c1ed03f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18970f141d10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 01:36:46</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>e964c2834c40311006d864a6147cac3e</update_guid>
+        <update_guid_history>e964c2834c40311006d864a6147cac3e:-732679104</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 01:38:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>7b883197187d4473bc110020f90c5649</sys_id>
+        <sys_metadata>2164c28307403110eebefd908c1ed03d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1058161_game_rev_sys_id</sys_name>
+        <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
+        <sys_parent display_value="">b164c28307403110eebefd908c1ed04e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
+        <sys_scope_delete display_value="">348b3a01d8e94c3291600c89a0553924</sys_scope_delete>
+        <sys_update_name>sys_security_acl_2164c28307403110eebefd908c1ed03d</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_2164c28307403110eebefd908c1ed03d">a564c28307403110eebefd908c1ed03f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 01:38:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
