@@ -6,10 +6,21 @@
         <element label="Reviewer" mandatory="true" max_length="32" name="reviewer" reference="sys_user" type="reference"/>
         <element label="Review Date" max_length="40" name="review_date" type="glide_date"/>
         <element choice="1" label="Stars" max_length="40" name="stars" type="choice">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="★★★★★" sequence="10" value="5"/>
+                <element inactive_on_update="false" label="★★★★" sequence="20" value="4"/>
+                <element inactive_on_update="false" label="★★★" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="★★" sequence="40" value="2"/>
+                <element inactive_on_update="false" label="★" sequence="50" value="1"/>
+            </choice>
         </element>
-        <element choice="1" label="Status" max_length="40" name="status" read_only="true" type="choice">
-            <choice/>
+        <element choice="3" label="Status" max_length="40" name="status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Not Created" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="Waiting Approval" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Approved" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Rejected" sequence="30" value="3"/>
+            </choice>
         </element>
         <index name="index">
             <element name="game"/>
