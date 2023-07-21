@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="" section_id="a56a0e0b07403110eebefd908c1ed0bd" sys_domain="global" table="x_1058161_game_rev_game" version="3" view="">
+    <sys_ui_section caption="New Section" section_id="ed6e4bd707403110eebefd908c1ed0bd" sys_domain="global" table="x_1058161_game_rev_game" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-21 01:43:13</sys_created_on>
-            <sys_id>4a7f0f1b07403110eebefd908c1ed0dc</sys_id>
+            <sys_created_on>2023-07-21 01:38:33</sys_created_on>
+            <sys_id>e56e4bd707403110eebefd908c1ed0c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">a56a0e0b07403110eebefd908c1ed0bd</sys_ui_section>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">ed6e4bd707403110eebefd908c1ed0bd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-21 01:43:13</sys_updated_on>
+            <sys_updated_on>2023-07-21 01:38:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-21 01:43:13</sys_created_on>
-            <sys_id>ca7f0f1b07403110eebefd908c1ed0dc</sys_id>
+            <sys_created_on>2023-07-21 01:38:33</sys_created_on>
+            <sys_id>696e4bd707403110eebefd908c1ed0c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">a56a0e0b07403110eebefd908c1ed0bd</sys_ui_section>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">ed6e4bd707403110eebefd908c1ed0bd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-21 01:43:13</sys_updated_on>
+            <sys_updated_on>2023-07-21 01:38:33</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>title</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-21 01:43:13</sys_created_on>
-            <sys_id>4e7f0f1b07403110eebefd908c1ed0dc</sys_id>
+            <sys_created_on>2023-07-21 01:38:33</sys_created_on>
+            <sys_id>e96e4bd707403110eebefd908c1ed0c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">a56a0e0b07403110eebefd908c1ed0bd</sys_ui_section>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">ed6e4bd707403110eebefd908c1ed0bd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-21 01:43:13</sys_updated_on>
+            <sys_updated_on>2023-07-21 01:38:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>genre</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-21 01:43:13</sys_created_on>
-            <sys_id>ce7f0f1b07403110eebefd908c1ed0dc</sys_id>
+            <sys_created_on>2023-07-21 01:38:33</sys_created_on>
+            <sys_id>6d6e4bd707403110eebefd908c1ed0c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">a56a0e0b07403110eebefd908c1ed0bd</sys_ui_section>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">ed6e4bd707403110eebefd908c1ed0bd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-21 01:43:13</sys_updated_on>
+            <sys_updated_on>2023-07-21 01:38:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>release_date</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-21 01:43:13</sys_created_on>
-            <sys_id>427f0f1b07403110eebefd908c1ed0dd</sys_id>
+            <sys_created_on>2023-07-21 01:38:33</sys_created_on>
+            <sys_id>ed6e4bd707403110eebefd908c1ed0c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">a56a0e0b07403110eebefd908c1ed0bd</sys_ui_section>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">ed6e4bd707403110eebefd908c1ed0bd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-21 01:43:13</sys_updated_on>
+            <sys_updated_on>2023-07-21 01:38:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>.split</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-21 01:43:13</sys_created_on>
-            <sys_id>c27f0f1b07403110eebefd908c1ed0dd</sys_id>
+            <sys_created_on>2023-07-21 01:38:33</sys_created_on>
+            <sys_id>616e4bd707403110eebefd908c1ed0c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">a56a0e0b07403110eebefd908c1ed0bd</sys_ui_section>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">ed6e4bd707403110eebefd908c1ed0bd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-21 01:43:13</sys_updated_on>
+            <sys_updated_on>2023-07-21 01:38:33</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>developer</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-21 01:43:13</sys_created_on>
-            <sys_id>467f0f1b07403110eebefd908c1ed0dd</sys_id>
+            <sys_created_on>2023-07-21 01:38:33</sys_created_on>
+            <sys_id>e16e4bd707403110eebefd908c1ed0c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">a56a0e0b07403110eebefd908c1ed0bd</sys_ui_section>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">ed6e4bd707403110eebefd908c1ed0bd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-21 01:43:13</sys_updated_on>
+            <sys_updated_on>2023-07-21 01:38:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>esrb_rating</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-21 01:43:13</sys_created_on>
-            <sys_id>c67f0f1b07403110eebefd908c1ed0dd</sys_id>
+            <sys_created_on>2023-07-21 01:38:33</sys_created_on>
+            <sys_id>656e4bd707403110eebefd908c1ed0c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">a56a0e0b07403110eebefd908c1ed0bd</sys_ui_section>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">ed6e4bd707403110eebefd908c1ed0bd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-21 01:43:13</sys_updated_on>
+            <sys_updated_on>2023-07-21 01:38:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,38 +116,38 @@
             <element>released</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-21 01:43:13</sys_created_on>
-            <sys_id>4a7f0f1b07403110eebefd908c1ed0dd</sys_id>
+            <sys_created_on>2023-07-21 01:38:33</sys_created_on>
+            <sys_id>e56e4bd707403110eebefd908c1ed0c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">a56a0e0b07403110eebefd908c1ed0bd</sys_ui_section>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1058161_game_rev_game" sys_domain="global" view="Default view">ed6e4bd707403110eebefd908c1ed0bd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-21 01:43:13</sys_updated_on>
+            <sys_updated_on>2023-07-21 01:38:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption/>
+            <caption>New Section</caption>
             <header>false</header>
             <name>x_1058161_game_rev_game</name>
             <roles/>
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-20 02:02:59</sys_created_on>
+            <sys_created_on>2023-07-21 01:38:33</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a56a0e0b07403110eebefd908c1ed0bd</sys_id>
+            <sys_id>ed6e4bd707403110eebefd908c1ed0bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_1058161_game_rev_game</sys_name>
             <sys_overrides/>
             <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
             <sys_policy/>
             <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
-            <sys_update_name>sys_ui_section_a56a0e0b07403110eebefd908c1ed0bd</sys_update_name>
+            <sys_update_name>sys_ui_section_ed6e4bd707403110eebefd908c1ed0bd</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-20 02:02:59</sys_updated_on>
+            <sys_updated_on>2023-07-21 01:38:33</sys_updated_on>
             <sys_user/>
-            <title>true</title>
+            <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_section>

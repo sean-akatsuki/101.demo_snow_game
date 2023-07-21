@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="11ebb54b07003110eebefd908c1ed066" label="GAME" max_length="40" name="x_1058161_game_rev_game" type="collection">
-        <element label="Developer" max_length="40" name="developer" reference="sys_user" type="reference"/>
-        <element choice="1" label="ESRB Rating" max_length="40" name="esrb_rating" type="choice">
-            <choice/>
+        <element label="Developer" mandatory="true" max_length="40" name="developer" type="string"/>
+        <element choice="3" default="9" label="ESRB Rating" mandatory="true" max_length="40" name="esrb_rating" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Everyone" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="Everyone 10+" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Teen" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Mature 17+" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Adults Only 18+" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="Rating Pending" sequence="9" value="9"/>
+            </choice>
         </element>
-        <element choice="1" label="Genre" max_length="40" name="genre" type="choice">
-            <choice/>
+        <element choice="1" label="Genre" mandatory="true" max_length="40" name="genre" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Action" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="Action-adventure" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Adventure" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Puzzle" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="Role-playing" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="Simulation" sequence="50" value="5"/>
+                <element inactive_on_update="false" label="Strategy" sequence="60" value="6"/>
+                <element inactive_on_update="false" label="Sports" sequence="70" value="7"/>
+                <element inactive_on_update="false" label="Other" sequence="99" value="9"/>
+            </choice>
         </element>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Game Id" max_length="10" name="number" type="string"/>
-        <element label="Released" max_length="40" name="released" type="boolean"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Game Id" max_length="10" name="number" read_only="true" type="string"/>
+        <element label="Released" max_length="40" name="released" read_only="true" type="boolean"/>
         <element label="Release Date" max_length="40" name="release_date" type="glide_date"/>
-        <element display="true" label="Title" max_length="40" name="title" type="string"/>
+        <element display="true" label="Title" mandatory="true" max_length="40" name="title" type="string"/>
     </element>
 </database>
