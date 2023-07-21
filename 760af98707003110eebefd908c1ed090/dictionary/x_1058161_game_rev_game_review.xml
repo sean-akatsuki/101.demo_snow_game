@@ -14,7 +14,7 @@
                 <element inactive_on_update="false" label="★" sequence="50" value="1"/>
             </choice>
         </element>
-        <element choice="3" label="Status" max_length="40" name="status" read_only="true" type="choice">
+        <element choice="3" default="0" label="Status" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Not Created" sequence="0" value="0"/>
                 <element inactive_on_update="false" label="Waiting Approval" sequence="10" value="1"/>
