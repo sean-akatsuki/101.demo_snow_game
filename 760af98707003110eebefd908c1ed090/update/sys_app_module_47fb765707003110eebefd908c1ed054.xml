@@ -5,36 +5,36 @@
         <assessment/>
         <device_type/>
         <filter/>
-        <hint>list all current games</hint>
+        <hint/>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>NEW</link_type>
         <map_page/>
-        <mobile_title>All games</mobile_title>
+        <mobile_title>New review</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_1058161_game_rev_game</name>
-        <order>130</order>
+        <name>x_1058161_game_rev_game_review</name>
+        <order>210</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
         <roles>x_1058161_game_rev.app_user</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-07-20 01:47:59</sys_created_on>
+        <sys_created_on>2023-07-21 00:19:10</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>dfe5420707403110eebefd908c1ed01e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>All games</sys_name>
+        <sys_id>47fb765707003110eebefd908c1ed054</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New review</sys_name>
         <sys_overrides/>
         <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
         <sys_policy/>
         <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
-        <sys_update_name>sys_app_module_dfe5420707403110eebefd908c1ed01e</sys_update_name>
+        <sys_update_name>sys_app_module_47fb765707003110eebefd908c1ed054</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-21 00:14:02</sys_updated_on>
+        <sys_updated_on>2023-07-21 00:19:10</sys_updated_on>
         <timeline_page/>
-        <title>All games</title>
+        <title>New review</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
