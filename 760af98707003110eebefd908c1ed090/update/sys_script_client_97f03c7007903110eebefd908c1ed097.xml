@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>ClientScriptOnGameLoad</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>ClientScriptOnGameLoad</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //form field editable setting
+	if (g_form.isNewRecord() || g_user.hasRole('x_1058161_game_rev.app_admin') || g_user.hasRole('admin') ){
+		// form editable when creaing record, using admin role
+		
+	}else{
+		
+		if (g_form.getValue('sys_created_by') == g_user.userName ){
+			// form editable partly when populating records users own
+			g_form.setReadOnly('title', true);
+			g_form.setReadOnly('developer', true);
+			
+		}else{
+			//form read only
+			g_form.setReadOnly('title', true);
+			g_form.setReadOnly('developer', true);
+			g_form.setReadOnly('genre', true);
+			g_form.setReadOnly('esrb_rating', true);
+			g_form.setReadOnly('released', true);
+			g_form.setReadOnly('release_date', true);
+			
+		}
+		
+	}
+
+	//release date check
+	if (!g_form.isNewRecord()){
+		var DateOnLoad  = g_form.getValue('release_date');
+        var DateCurrent = formatDate(new Date(), 'yyyy-MM-dd');
+        //alert(DateOnLoad);
+        //alert(DateCurrent);
+        if (DateOnLoad <= DateCurrent){
+			g_form.setValue('released', 'true');
+        }else {
+			g_form.setValue('released', 'false');
+		}
+     }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-25 06:03:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>97f03c7007903110eebefd908c1ed097</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>ClientScriptOnGameLoad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
+        <sys_update_name>sys_script_client_97f03c7007903110eebefd908c1ed097</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-26 01:27:38</sys_updated_on>
+        <table>x_1058161_game_rev_game</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
