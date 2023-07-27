@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="11ebb54b07003110eebefd908c1ed066" label="GAME" max_length="40" name="x_1058161_game_rev_game" type="collection">
-        <element label="Developer" mandatory="true" max_length="40" name="developer" type="string"/>
-        <element choice="3" default="9" label="ESRB Rating" mandatory="true" max_length="40" name="esrb_rating" type="choice">
+        <element label="開発者" mandatory="true" max_length="40" name="developer" type="string"/>
+        <element choice="3" default="9" label="ESRBレイティング" mandatory="true" max_length="40" name="esrb_rating" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Everyone" sequence="0" value="0"/>
                 <element inactive_on_update="false" label="Everyone 10+" sequence="1" value="1"/>
@@ -11,7 +11,7 @@
                 <element inactive_on_update="false" label="Rating Pending" sequence="9" value="9"/>
             </choice>
         </element>
-        <element choice="1" label="Genre" mandatory="true" max_length="40" name="genre" type="choice">
+        <element choice="1" label="体裁" mandatory="true" max_length="40" name="genre" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Action" sequence="0" value="0"/>
                 <element inactive_on_update="false" label="Action-adventure" sequence="10" value="1"/>
@@ -24,9 +24,9 @@
                 <element inactive_on_update="false" label="Other" sequence="99" value="9"/>
             </choice>
         </element>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Game Id" max_length="10" name="number" read_only="true" type="string"/>
-        <element label="Released" max_length="40" name="released" type="boolean"/>
-        <element label="Release Date" max_length="40" name="release_date" type="glide_date"/>
-        <element display="true" label="Title" mandatory="true" max_length="40" name="title" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="ゲームID" max_length="10" name="number" read_only="true" type="string"/>
+        <element label="リリース済みフラグ" max_length="40" name="released" type="boolean"/>
+        <element label="リリース日付" max_length="40" name="release_date" type="glide_date"/>
+        <element display="true" label="ゲーム名" mandatory="true" max_length="40" name="title" type="string"/>
     </element>
 </database>

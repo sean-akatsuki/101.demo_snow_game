@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>sysverb_delete</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>Deletes current record after confirmation.</comments>
+        <condition>current.isValidRecord() &amp;&amp; current.canDelete()&amp;&amp;gs.hasRole('admin','x_1058161_game_rev.app_admin')</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Delete</name>
+        <onclick>confirmAndDeleteFromForm()</onclick>
+        <order>100</order>
+        <script><![CDATA[var ajaxHelper;
+var objSysId;
+var tblName;
+var dlg;
+var returnUrl;
+var fromRelList;
+var module;
+var listQuery;
+var stackName = null;
+var gotoUrl = null;
+
+function confirmAndDeleteFromForm() {   
+    objSysId = g_form.getUniqueValue();
+    tblName = g_form.getTableName();
+    fromRelList = g_form.getParameter('sysparm_from_related_list');
+    module = g_form.getParameter('sysparm_userpref_module');
+    listQuery = g_form.getParameter('sysparm_record_list');
+    stackName = g_form.getParameter('sysparm_nameofstack');
+	gotoUrl = g_form.getParameter('sysparm_goto_url');
+
+    ajaxHelper = new GlideAjax('DeleteRecordAjax');
+    ajaxHelper.addParam('sysparm_name', 'getCascadeDeleteTables');
+    ajaxHelper.addParam('sysparm_obj_id', objSysId);
+    ajaxHelper.addParam('sysparm_table_name', tblName);
+    ajaxHelper.addParam('sysparm_nameofstack', stackName);
+    ajaxHelper.setWantSessionMessages(false);
+	if (gotoUrl && gotoUrl != "")
+		ajaxHelper.addParam('sysparm_goto_url', setRedirectFields(gotoUrl));
+	
+    ajaxHelper.getXMLAnswer(getCascadeDelTablesDoneForm.bind(this), null, null); 
+}
+
+function getCascadeDelTablesDoneForm(answer, s) {
+    
+    var ansrArray = answer.split(';');
+    returnUrl = ansrArray[0];
+    var objList = ansrArray[2];
+	var dialogClass = window.GlideModal ? GlideModal : GlideDialogWindow;
+    dlg = new dialogClass('delete_confirm_form');
+    dlg.setTitle(new GwtMessage().getMessage('Confirmation'));
+    if(objList == null) {
+       dlg.setWidth(275);
+    } else {
+       dlg.setWidth(450);
+    }
+    dlg.setPreference('sysparm_obj_id', objSysId);
+    dlg.setPreference('sysparm_table_name', tblName);
+    dlg.setPreference('sysparm_delobj_list', objList);  
+    dlg.setPreference('sysparm_parent_form', this);
+    dlg.setPreference('focusTrap', true);
+    dlg.render();
+    
+}
+
+function deleteCompleted() {
+    dlg.destroy();
+    var w = getTopWindow();
+    cbField = w.document.getElementById('glide_dialog_form_target_' + tblName);
+    if(cbField != null) {
+        // this is a dialog form, make sure the completion callback is called
+        cbField.value = 'sysverb_delete:' + objSysId;
+        cbField.onchange();
+        
+       // dismiss the dialog form
+       var elem = window.parent.document.getElementById('body_FormDialog');
+       if (elem)
+           new GlideWindow().locate(elem).destroy();
+    } else {
+        // this is a regular form, use the return URL to back to the correct view, where possible
+        if (returnUrl != 'null') {
+            window.location.href = returnUrl;
+        } else {           
+            // this is just the default case, in case everything else blows up, should never happen!
+            window.location.href = window.location.protocol + '//' + window.location.host + '/' + tblName + '_list.do?sysparm_userpref_module=' + module + '&sysparm_query=' + listQuery + '&sysparm_cancelable=true';
+        }        
+    }	   
+}
+
+// this logic is similar to that in RedirectTransaction.setRedirectURL
+function setRedirectFields(gotoURL) {
+	if (gotoURL.indexOf('$sys_id') > -1)
+		gotoURL = gotoURL.replace(/\$sys_id/g, g_form.getUniqueValue());
+	
+	if (gotoURL.indexOf('$action') > -1)
+		gotoURL = gotoURL.replace(/\$action/g, 'sysverb_delete');
+	
+	if (gotoURL.indexOf('$display_value') > -1)
+		gotoURL = gotoURL.replace(/\$display_value/g, g_form.getDisplayValue());
+	
+	return gotoURL;
+}
+
+]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-27 00:32:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d150f59107103110eebefd908c1ed049</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Delete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
+        <sys_update_name>sys_ui_action_d150f59107103110eebefd908c1ed049</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-27 00:51:59</sys_updated_on>
+        <table>x_1058161_game_rev_game</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="72bd71cb07003110eebefd908c1ed073" label="GAME REVIEW" max_length="40" name="x_1058161_game_rev_game_review" type="collection">
-        <element label="Comment" max_length="100" name="comment" type="string"/>
-        <element label="Game" mandatory="true" max_length="32" name="game" reference="x_1058161_game_rev_game" type="reference"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="GameReview Id" max_length="40" name="number" read_only="true" type="string"/>
-        <element label="Reviewer" mandatory="true" max_length="32" name="reviewer" reference="sys_user" reference_qual="roles=x_1058161_game_rev.app_admin^EQ" reference_qual_condition="roles=x_1058161_game_rev.app_admin^EQ" type="reference"/>
-        <element label="Review Date" max_length="40" name="review_date" type="glide_date"/>
-        <element choice="1" label="Stars" max_length="40" name="stars" type="choice">
+        <element label="コメント" max_length="100" name="comment" type="string"/>
+        <element label="ゲーム" mandatory="true" max_length="32" name="game" reference="x_1058161_game_rev_game" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="レビューID" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="レビュアー" mandatory="true" max_length="32" name="reviewer" reference="sys_user" reference_qual="roles=x_1058161_game_rev.app_admin^EQ" reference_qual_condition="roles=x_1058161_game_rev.app_admin^EQ" type="reference"/>
+        <element label="レビュー日付" max_length="40" name="review_date" type="glide_date"/>
+        <element choice="1" label="オススメ" max_length="40" name="stars" type="choice">
             <choice>
                 <element inactive_on_update="false" label="★★★★★" sequence="10" value="5"/>
                 <element inactive_on_update="false" label="★★★★" sequence="20" value="4"/>
@@ -14,7 +14,7 @@
                 <element inactive_on_update="false" label="★" sequence="50" value="1"/>
             </choice>
         </element>
-        <element choice="3" default="0" label="Status" max_length="40" name="status" type="choice">
+        <element choice="3" default="0" label="ステータス" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Not Created" sequence="0" value="0"/>
                 <element inactive_on_update="false" label="Waiting Approval" sequence="10" value="1"/>

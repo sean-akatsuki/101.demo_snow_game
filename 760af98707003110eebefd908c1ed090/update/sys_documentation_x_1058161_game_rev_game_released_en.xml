@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="released" label="Released" language="en" table="x_1058161_game_rev_game">
+    <sys_documentation element="released" label="リリース済みフラグ" language="en" table="x_1058161_game_rev_game">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>released</element>
             <help/>
             <hint/>
-            <label>Released</label>
+            <label>リリース済みフラグ</label>
             <language>en</language>
             <name>x_1058161_game_rev_game</name>
-            <plural>Released</plural>
+            <plural>リリース済みフラグs</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2023-07-20 01:26:01</sys_created_on>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Released</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>リリース済みフラグ</sys_name>
             <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
             <sys_policy/>
             <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
             <sys_update_name>sys_documentation_x_1058161_game_rev_game_released_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-20 01:26:01</sys_updated_on>
+            <sys_updated_on>2023-07-27 02:05:27</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
