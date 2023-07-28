@@ -29,3 +29,11 @@
 |status|Choice|レビューステータス|
 |comment_his|Journal|コメント履歴|
 ### 2.2 テーブル実装
+source file:
+dictionary/x_1058161_game_rev_game.xml  
+dictionary/x_1058161_game_rev_game_review.xml    
+
+## 3. Role/アプリロール
+- 一般ユーザ/app_user
+- レビュー/app_adm
+
