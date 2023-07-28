@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="comment" table="x_1058161_game_rev_game_review">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="comment_his" table="x_1058161_game_rev_game_review">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>コメント</column_label>
+        <column_label>コメント履歴</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -26,15 +26,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>comment</element>
+        <element>comment_his</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Journal">journal</internal_type>
         <mandatory>false</mandatory>
-        <max_length>100</max_length>
+        <max_length>4000</max_length>
         <name>x_1058161_game_rev_game_review</name>
         <next_element/>
         <primary>false</primary>
@@ -51,14 +51,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-07-20 01:36:48</sys_created_on>
-        <sys_name>コメント</sys_name>
+        <sys_created_on>2023-07-27 05:39:24</sys_created_on>
+        <sys_name>コメント履歴</sys_name>
         <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
         <sys_policy/>
         <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
-        <sys_update_name>sys_dictionary_x_1058161_game_rev_game_review_comment</sys_update_name>
+        <sys_update_name>sys_dictionary_x_1058161_game_rev_game_review_comment_his</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-27 02:09:59</sys_updated_on>
+        <sys_updated_on>2023-07-27 05:39:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="status" table="x_1058161_game_rev_game_review">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="reviewed" table="x_1058161_game_rev_game">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -10,13 +10,13 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>3</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>ステータス</column_label>
+        <column_label>レビュー提出フラグ</column_label>
         <comments/>
         <create_roles/>
-        <default_value>1</default_value>
+        <default_value>false</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -26,16 +26,16 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>status</element>
+        <element>reviewed</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Choice">choice</internal_type>
+        <internal_type display_value="">boolean</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <name>x_1058161_game_rev_game_review</name>
+        <name>x_1058161_game_rev_game</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -51,14 +51,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-07-20 01:36:47</sys_created_on>
-        <sys_name>ステータス</sys_name>
+        <sys_created_on>2023-07-27 02:55:28</sys_created_on>
+        <sys_name>レビュー提出フラグ</sys_name>
         <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
         <sys_policy/>
         <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
-        <sys_update_name>sys_dictionary_x_1058161_game_rev_game_review_status</sys_update_name>
+        <sys_update_name>sys_dictionary_x_1058161_game_rev_game_reviewed</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-27 05:20:40</sys_updated_on>
+        <sys_updated_on>2023-07-27 02:59:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

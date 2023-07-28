@@ -11,6 +11,7 @@
         <name>ClientScriptOnGameLoad</name>
         <order/>
         <script><![CDATA[function onLoad() {
+	g_form.setVisible('sys_created_by',false) ;
    //form field editable setting
 	if (g_form.isNewRecord() || g_user.hasRole('x_1058161_game_rev.app_admin') || g_user.hasRole('admin') ){
 		// form editable when creaing record, using admin role
@@ -54,7 +55,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>97f03c7007903110eebefd908c1ed097</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>ClientScriptOnGameLoad</sys_name>
         <sys_overrides/>
         <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
@@ -62,7 +63,7 @@
         <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
         <sys_update_name>sys_script_client_97f03c7007903110eebefd908c1ed097</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-26 01:27:38</sys_updated_on>
+        <sys_updated_on>2023-07-27 06:43:08</sys_updated_on>
         <table>x_1058161_game_rev_game</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

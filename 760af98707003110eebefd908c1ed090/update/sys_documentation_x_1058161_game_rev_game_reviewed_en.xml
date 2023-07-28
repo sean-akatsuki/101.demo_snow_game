@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="comment" label="コメント" language="en" table="x_1058161_game_rev_game_review">
+    <sys_documentation element="reviewed" label="レビュー提出フラグ" language="en" table="x_1058161_game_rev_game">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>comment</element>
+            <element>reviewed</element>
             <help/>
             <hint/>
-            <label>コメント</label>
+            <label>レビュー提出フラグ</label>
             <language>en</language>
-            <name>x_1058161_game_rev_game_review</name>
-            <plural>コメントs</plural>
+            <name>x_1058161_game_rev_game</name>
+            <plural>レビュー提出フラグs</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-20 01:36:48</sys_created_on>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>コメント</sys_name>
+            <sys_created_on>2023-07-27 02:55:29</sys_created_on>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>レビュー提出フラグ</sys_name>
             <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
             <sys_policy/>
             <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
-            <sys_update_name>sys_documentation_x_1058161_game_rev_game_review_comment_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_1058161_game_rev_game_reviewed_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-27 02:09:59</sys_updated_on>
+            <sys_updated_on>2023-07-27 02:59:15</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>ClientScriptOnReviewLoad</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>ClientScriptOnReviewLoad</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	g_form.setVisible('sys_created_by',false);
+   //Type appropriate comment here, and begin script below
+	if (g_form.isNewRecord()){//新規レコードの場合
+		g_form.setReadOnly('stars', true); //オススメ
+		g_form.setReadOnly('reviewer', true); //レビュアー
+		g_form.setReadOnly('review_date', true); //レビュ日付
+		g_form.removeOption('status', '2'); //remove Approved
+		g_form.removeOption('status', '3'); //remove Rejected
+	}else{//更新レコードの場合
+		if (g_user.hasRole('admin')){
+			//if (g_form.getValue('reviewer')=='') {g_form.setValue('reviewer', g_user.getFullName());}
+			//if (g_form.getValue('review_date')=='') {g_form.setValue('review_date', formatDate(new Date(), 'yyyy-MM-dd'));}
+		}else{
+			g_form.setReadOnly('game', true); //ゲーム
+		
+			if (g_form.getValue('status')=='2'||g_form.getValue('status')=='3') {//form will be uneditable once approved or rejected 
+				g_form.setReadOnly('stars', true); //オススメ
+				g_form.setReadOnly('reviewer', true); //レビュアー
+				g_form.setReadOnly('review_date', true); //レビュ日付
+				g_form.setReadOnly('status', true); 
+				g_form.setReadOnly('comment_his', true); 
+			}else{//editable while waitting for approval
+				//app admin　
+				if (g_user.hasRole('x_1058161_game_rev.app_admin') ){
+					//&& !g_form.getValue('sys_created_by') == g_user.userName 
+					//g_form.removeOption('status', '1'); //remove waiting approve
+					//if (g_form.getValue('reviewer')=='') {g_form.setValue('reviewer', g_user.getFullName());}
+					//if (g_form.getValue('review_date')=='') {g_form.setValue('review_date', formatDate(new Date(), 'yyyy-MM-dd'));}
+				}else{//app user
+					//本人
+					if (g_form.getValue('sys_created_by') == g_user.userName){
+						g_form.setReadOnly('stars', true); //オススメ
+						g_form.setReadOnly('reviewer', true); //レビュアー
+						g_form.setReadOnly('review_date', true); //レビュ日付
+						g_form.setReadOnly('status', true);
+					}else{
+						g_form.setReadOnly('stars', true); //オススメ
+						g_form.setReadOnly('reviewer', true); //レビュアー
+						g_form.setReadOnly('review_date', true); //レビュ日付
+						g_form.setReadOnly('status', true); 
+						g_form.setReadOnly('comment_his', true); 
+					}
+				}
+			}
+		}
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-27 03:03:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>661b521d07903110eebefd908c1ed083</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>ClientScriptOnReviewLoad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
+        <sys_update_name>sys_script_client_661b521d07903110eebefd908c1ed083</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-27 07:51:25</sys_updated_on>
+        <table>x_1058161_game_rev_game_review</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

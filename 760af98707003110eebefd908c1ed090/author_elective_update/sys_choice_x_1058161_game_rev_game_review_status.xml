@@ -20,25 +20,6 @@
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Not Created</label>
-            <language>en</language>
-            <name>x_1058161_game_rev_game_review</name>
-            <sequence>0</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-07-21 02:19:19</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-21 02:20:07</sys_updated_on>
-            <value>0</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>status</element>
-            <hint/>
-            <inactive>false</inactive>
             <label>Waiting Approval</label>
             <language>en</language>
             <name>x_1058161_game_rev_game_review</name>
