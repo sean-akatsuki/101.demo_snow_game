@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>ClientScriptOnReviewSubmit</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>ClientScriptOnReviewSubmit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   if (g_form.getValue('status')=='2'){
+	   if(g_form.getValue('reviewer')=='' ||g_form.getValue('review_date')==''||g_form.getValue('stars')==''){
+		   g_form.addErrorMessage('Approvedの場合、レビュー・レビュー日付・オススメ情報を入力してください');
+		   return false;
+	   }
+   
+   }
+   if (g_form.getValue('status')=='3'){
+	   if(g_form.getValue('reviewer')=='' ||g_form.getValue('review_date')==''){
+		   g_form.addErrorMessage('Rejectedの場合、レビュー・レビュー日付を入力してください');
+		   return false;
+	   }
+   
+   }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 00:25:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d5a0032507147110eebefd908c1ed012</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>ClientScriptOnReviewSubmit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Game Review" source="x_1058161_game_rev">760af98707003110eebefd908c1ed090</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Game Review">760af98707003110eebefd908c1ed090</sys_scope>
+        <sys_update_name>sys_script_client_d5a0032507147110eebefd908c1ed012</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-28 00:47:54</sys_updated_on>
+        <table>x_1058161_game_rev_game_review</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
