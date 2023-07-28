@@ -5,8 +5,8 @@
 - レビュアーグループのメンバーがリクエストされたゲームレビューを評価してApprove/Rejectする
 
 ## 2. Data Modeling/データモデリング
-### 2.1 テーブル設計
 **テーブル-Game/ゲーム**  
+dictionary/x_1058161_game_rev_game.xml  
 |カラム|タイプ|ラベル|
 | :---        |    :----   |          :---- |
 |Game_id|String|ゲームID|
@@ -19,6 +19,7 @@
 |reviewed|boolean|レビュー提出済みフラグ|
 
 **テーブル-GameReview/ゲームレビュー**  
+dictionary/x_1058161_game_rev_game_review.xml  
 |カラム|タイプ|ラベル|
 | :---        |    :----   |          :---- |
 |review_id|String|レビューID|
@@ -28,10 +29,6 @@
 |review_date|date|レビュー日付|
 |status|Choice|レビューステータス|
 |comment_his|Journal|コメント履歴|
-### 2.2 テーブル実装
-source file:  
-dictionary/x_1058161_game_rev_game.xml  
-dictionary/x_1058161_game_rev_game_review.xml    
 
 ## 3. Role/アプリロール
 - 一般ユーザ/app_user--ロールをグループapp_userに紐づく
